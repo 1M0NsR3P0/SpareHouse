@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
+        <div id='home'>
             all the pages will be here
             
         </div>

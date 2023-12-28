@@ -3,6 +3,9 @@ import "./navbar.css"
 const menubaropen = () => {
     document.querySelector(".menus").classList.toggle("hidden")
 }
+const showCategory = () => {
+    document.querySelector(".category").classList.toggle("hidden")
+}
 
 
 const Navbar = () => {
@@ -23,9 +26,9 @@ const Navbar = () => {
                     </span>
                 </div>
             </div>
-            <div className='other-container hidden gap-1 justify-center items-center md:flex'>
+            <div className='other-container hidden gap-1 justify-center items-center md:flex cursor-pointer'>
                 <div className='flex justify-center items-center'>
-                    <div className='flex justify-center items-center'>
+                    <div className='flex justify-center items-center '>
                         <span className='font-bold'>Find Us</span>
                         <img src="./location.png" alt="location-icon" className='location-icon w-[30px] h-[30px]' />
                     </div>
@@ -41,14 +44,26 @@ const Navbar = () => {
                     </span>
                 </div>
             </div>
-            <div className='mr-0 block md:hidden' onClick={menubaropen}>
-                <button className='pl-3 pr-3'>&#x2630;</button>
+
+            <div className='mr-0 flex gap-2 select-none cursor-pointer '>
+                <div className='category-container select-none cursor-pointer bg-[#073b77] text-white p-1 rounded-md' onClick={showCategory}>Categories
+                </div>
+                <button onClick={menubaropen} className='pl-3 pr-3 block md:hidden'>&#x2630;</button>
             </div>
 
-            <table className='hidden absolute top-[90px] right-0 bg-slate-400 menus'>
-                <tr className='menu'><td className='text-red-600'><a href='#'>&#x1F464; Profile</a></td></tr>
-                <tr className='menu'><td className='text-red-600'><a href='#'><span className=''>&#x1F6D2;</span> Cart</a></td></tr>
-                <tr className='menu'><td className='text-red-600 flex'><img src="./location.png" alt="location-icon" className='location-icon w-[30px] h-[30px]' />Find Us</td></tr>
+            <table className='select-none hidden absolute top-[90px] right-0 bg-[#7caaf9] menus cursor-pointer'>
+                <tbody>
+                    <tr className='menu'><td className='text-red-600'><a href='#'>&#x1F464; Profile</a></td></tr>
+                    <tr className='menu'><td className='text-red-600'><a href='#'><span className=''>&#x1F6D2;</span> Cart</a></td></tr>
+                    <tr className='menu'><td className='text-red-600 flex'><img src="./location.png" alt="location-icon" className='location-icon w-[30px] h-[30px]' />Find Us</td></tr>
+                </tbody>
+            </table>
+            <table className='select-none hidden category absolute top-[90px] right-0 bg-[#7caaf9] cursor-pointer'>
+                <tbody>
+                    <tr className='menu'><td className='text-red-600'><a href='#'>category 1</a></td></tr>
+                    <tr className='menu'><td className='text-red-600'><a href='#'>category 2</a></td></tr>
+                    <tr className='menu'><td className='text-red-600 flex'>category 3</td></tr>
+                </tbody>
             </table>
         </div>
     );
