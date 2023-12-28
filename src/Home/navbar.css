@@ -1,0 +1,36 @@
+.search{
+    opacity: 0.5;
+    padding: 8px;
+    border-radius: 10px;
+}
+.serach-icon{
+    position: absolute;
+}
+.location-icon{
+    color: red;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 93, 185);
+    padding: 7px;
+    color: white;
+    font-weight: 500;
+}
+.btnPrimary{
+    background-color: rgb(89, 0, 255);
+}
+.btn-trans{
+    background-color: rgba(255, 0, 0, 0);
+    
+}
+.menu{
+    list-style: none;
+}
+.menu td{
+    padding:8px;
+}
+.menu td:hover{
+    background-color: rgb(188, 185, 185);
+}
