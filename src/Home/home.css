@@ -1,10 +1,66 @@
-
-
-
-
-
-
-
+.mobileDivva{
+    height: 450px;
+    /* background-color: #ff0001; */
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    color: black;
+}
+.arrow-left{
+    background-color: rgba(69, 146, 247, 0.191);
+    left: 100px;
+}
+.arrow-right{
+    right: 100px;
+}
+.hotItems{
+    position: relative;
+}
+.SquareCard-container{
+    /* margin-left: 150px; */
+    /* perspective: 1/1; */
+    height: 400px;
+    width: 256px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    border: 1px solid rgba(17, 192, 255, 0.893);
+    border-radius: 10px;
+    padding: 2px;
+    position: relative;
+    user-select: none;
+}
+.squareImg-container{
+    background-color: rgba(97, 163, 255, 0.101);
+    border: 1px solid rgba(0, 130, 177, 0.587);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 2px;
+    height: 250px;
+    backdrop-filter: blur(1.8px);
+}
+.SquareCard-container img{
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    
+}
+.SquareCard-container img:hover{
+    transform: scale(1.4) translateY(-30px);
+}
+.SquareCard{
+    background-color: rgba(27, 126, 255, 0.943);
+    height: 200px;
+    width: 250px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
 
 

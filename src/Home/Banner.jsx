@@ -8,20 +8,18 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-
-
-// import required modules
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { AuthContext } from '../authoProvider/AuthProvider';
+
+
 const Banner = () => {
     const {mobile} = useContext(AuthContext)
-
     return (
         !mobile ? <>
             <div className='swiper-container m-0'>
                 <Swiper
                     slidesPerView={1}
-                    effect={'fade'}
+                    effect={'flip'}
                     loop={true}
                     pagination={{
                         clickable: true,
@@ -30,7 +28,7 @@ const Banner = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    navigation={true}
+                    navigation={false}
                     modules={[Pagination, EffectFade, Autoplay, Navigation]}
                     className="mySwiper"
                 >

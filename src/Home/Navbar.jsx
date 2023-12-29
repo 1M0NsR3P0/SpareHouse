@@ -15,9 +15,9 @@ const Navbar = () => {
         window.addEventListener("mousedown",popUpHandler)
     },[])
     return (
-        <div className='flex gap-0 md:gap-5 justify-evenly h-[90px] items-center bg-[#2c73c9c0] '>
+        <div className='navbar flex gap-0 md:gap-5 justify-evenly h-[90px] items-center bg-[#2c73c9] fixed z-10 w-[100vw]'>
             <div className='logo-container'>
-                <span className='logo flex gap-[1px] justify-start items-center'>
+                <span className='logo flex md:flex-row flex-col gap-[1px] justify-start items-center'>
                     <img src="./svg_spare_house_logo.svg" alt="logo" className='w-[90px] h-[90px]' />
                     <span className='hidden md:block text-blue-200 font-bold text-[1.5rem]'>Spare Hosue</span>
                 </span>

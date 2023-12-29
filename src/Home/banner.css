@@ -1,7 +1,7 @@
 .swiper-container{
-    margin-top: 50px;
-    
+    margin-top: 20px;    
     /* background-color: red; */
+    height: 150vh;
 }
 .mySwiper{
     height: 80vh !important;
@@ -43,7 +43,7 @@
     top: 120px;
 }
 .popImg:hover{
-    transform: scale(1.6) translateY(50px);
+    transform: scale(1.2) translateY(50px);
 }
 .swiper-pagination-bullets {
     display: none;

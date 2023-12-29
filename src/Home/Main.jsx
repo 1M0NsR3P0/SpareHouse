@@ -7,9 +7,9 @@ import Footer from './Footer';
 const Main = () => {
     return (
         <div>
-            <Navbar/>
-            <Outlet/>
-            <Footer/>
+            <div className='pb-[100px]'><Navbar/></div>
+            <div><Outlet/></div>
+            <div><Footer/></div>
         </div>
     );
 };
