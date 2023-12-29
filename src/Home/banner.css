@@ -1,0 +1,51 @@
+.swiper-container{
+    margin-top: 50px;
+    
+    /* background-color: red; */
+}
+.mySwiper{
+    height: 80vh !important;
+
+}
+.SwiperSlide{
+    /* background-color: green !important; */
+    display: flex !important;
+    position: relative !important;
+    height: 80vh !important;
+}
+.bgImg-container{
+    width: 100%;
+    height: 80vh !important;
+    /* background-color: yellow; */
+}
+.bgImg{
+    width: 100%;
+}
+.bgImg:hover{
+}
+.popImg-container{
+    background-color: aquamarine;
+}
+.popImg{
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 250px;
+    top: 60px;
+    height: 450px;
+    width: 450px;
+}
+.popImg3{
+    right: 100px;
+    top: 150px;
+}
+.popImg2{
+    right: 400px;
+    top: 120px;
+}
+.popImg:hover{
+    transform: scale(1.6) translateY(50px);
+}
+.swiper-pagination-bullets {
+    display: none;
+}
+
