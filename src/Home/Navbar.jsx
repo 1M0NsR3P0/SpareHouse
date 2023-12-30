@@ -56,16 +56,19 @@ const Navbar = () => {
 
             <table className={`select-none ${menuOpen?'block':'hidden'} z-50 absolute top-[90px] right-0 bg-[#7caaf9] menus cursor-pointer`}>
                 <tbody>
-                    <tr className='menu'><td className='text-red-600'><a href='#'>&#x1F464; Profile</a></td></tr>
-                    <tr className='menu'><td className='text-red-600'><a href='#'><span className=''>&#x1F6D2;</span> Cart</a></td></tr>
-                    <tr className='menu'><td className='text-red-600 flex'><img src="./location.png" alt="location-icon" className='location-icon w-[30px] h-[30px]' />Find Us</td></tr>
+                    <tr className='menu'><td className='text-[black]'><a href='#'>&#x1F464; Profile</a></td></tr>
+                    <tr className='menu'><td className='text-[black]'><a href='#'><span className=''>&#x1F6D2;</span> Cart</a></td></tr>
+                    <tr className='menu'><td className='text-[black] flex'><img src="./location.png" alt="location-icon" className='location-icon w-[30px] h-[30px]' />Find Us</td></tr>
                 </tbody>
             </table>
             <table className={`select-none ${categoryOpen?'block':'hidden'} z-50 category absolute top-[90px] right-0 bg-[#7caaf9] cursor-pointer`}>
                 <tbody>
-                    <tr className='menu'><td className='text-red-600'><a href='#'>category 1</a></td></tr>
-                    <tr className='menu'><td className='text-red-600'><a href='#'>category 2</a></td></tr>
-                    <tr className='menu'><td className='text-red-600 flex'>category 3</td></tr>
+                    <tr className='menu'><td className='text-[black]'><a href='#'>Helmets</a></td></tr>
+                    <tr className='menu'><td className='text-[black]'><a href='#'>Riding Gear</a></td></tr>
+                    <tr className='menu'><td className='text-[black] flex'>Accessories</td></tr>
+                    <tr className='menu'><td className='text-[black] flex'>Parts</td></tr>
+                    <tr className='menu'><td className='text-[black] flex'>Tires</td></tr>
+                    <tr className='menu'><td className='text-[black] flex'>NetWorking & Connectivities</td></tr>
                 </tbody>
             </table>
         </div>

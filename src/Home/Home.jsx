@@ -2,12 +2,14 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import "./home.css"
 import Banner from './Banner';
 import Loading from '../Loading';
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 import { AuthContext } from '../authoProvider/AuthProvider';
 import HotProducts from './HotProducts';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import BannerNewBikerDiscount from './BannerNewBikerDiscount';
+import CategoriesShow from './CategoriesShow';
+import Recommended from './Recommended';
 
 AOS.init({
     // Global settings:
@@ -37,8 +39,8 @@ const Home = () => {
         !mobile ? <>
             <div data-aos="zoom-in" data-aos-delay="250" id='home' className='h-[80vh] relative'>
                 <Parallax
-                    className='absolute top-0 left-0 parallax'
-                    bgImage={image1} strength={300}>
+                    className='absolute top-0 left-0 parallax z-10'
+                    bgImage={image1} strength={400}>
                     <div>
                         <div ><Banner /></div>
                     </div>
@@ -49,6 +51,12 @@ const Home = () => {
             </div>
             <div>
                 <BannerNewBikerDiscount/>
+            </div>
+            <div>
+                <CategoriesShow/>
+            </div>
+            <div>
+                <Recommended/>
             </div>
         </> :
 
