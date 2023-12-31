@@ -11,6 +11,7 @@ import BannerNewBikerDiscount from './BannerNewBikerDiscount';
 import CategoriesShow from './CategoriesShow';
 import Recommended from './Recommended';
 
+
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
