@@ -12,7 +12,7 @@ const HotProducts = () => {
     const [isInStart, setStart] = useState(false);;
 
     window.onload = () => {
-        document.querySelector(".arrow-left").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
+        document.querySelector(".arrow-left").style.backgroundColor = "rgba(69, 146, 247, 0.191)";
     }
     useEffect(() => {
         // Set an initial scroll value when the component mounts

@@ -1,61 +1,60 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import "./recommended.css"
+import "./productYouMayLIke.css"
 import { AuthContext } from '../authoProvider/AuthProvider';
 
-
-const Recommended = ({heading}) => {
-
+const ProductsUmayLIke = ({heading}) => {
+    
     const [rated, setRated] = useState(3.5) //will set from database
-    const scrollContainerRef1 = useRef(null)
-    const [scrollAmount1, setScrollAmount1] = useState(0)
-    const [isScrollEnd1, setIsScrollEnd1] = useState(false);;
-    const [isInStart1, setStart1] = useState(false);;
+    const scrollContainerRef3 = useRef(null)
+    const [scrollAmount, setScrollAmount] = useState(0)
+    const [isScrollEnd, setIsScrollEnd] = useState(false);;
+    const [isInStart, setStart] = useState(false);;
 
     window.onload = () => {
-        document.querySelector(".arrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)";
+        document.querySelector(".ArrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
     }
     useEffect(() => {
         // Set an initial scroll value when the component mounts
-        if (scrollContainerRef1.current) {
-            scrollContainerRef1.current.scrollLeft = 0;
+        if (scrollContainerRef3.current) {
+            scrollContainerRef3.current.scrollLeft = 0;
         }
     }, []); // Only runs once when the component mounts
-    
-    const handleScrollControl1 = () => {
-        if (scrollContainerRef1.current) {
-            const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef1.current;
-            setScrollAmount1(scrollLeft);
+
+    const handleScrollControl = () => {
+        if (scrollContainerRef3.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef3.current;
+            setScrollAmount(scrollLeft);
             const isEnd = scrollLeft >= scrollWidth - clientWidth;
             const isStart = scrollLeft === 0;
-            setIsScrollEnd1(isEnd);
-            setStart1(isStart);
+            setIsScrollEnd(isEnd);
+            setStart(isStart);
         }
     }
     useEffect(() => {
-        if (isInStart1) {
-            document.querySelector(".arrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
+        if (isInStart) {
+            document.querySelector(".ArrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
         }
-        else if (!isInStart1) {
-            document.querySelector(".arrowLeft").style.backgroundColor = "rgb(69, 146, 247)"
+        else if (!isInStart) {
+            document.querySelector(".ArrowLeft").style.backgroundColor = "rgb(69, 146, 247)"
         }
 
-        if (!isScrollEnd1) {
-            document.querySelector(".arrowRight").style.backgroundColor = "rgb(69, 146, 247)"
+        if (!isScrollEnd) {
+            document.querySelector(".ArrowRight").style.backgroundColor = "rgb(69, 146, 247)"
         }
-        else if (isScrollEnd1) {
-            document.querySelector(".arrowRight").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
+        else if (isScrollEnd) {
+            document.querySelector(".ArrowRight").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
         }
-    }, [scrollAmount1, isScrollEnd1, isInStart1])
+    }, [scrollAmount, isScrollEnd, isInStart])
 
-    const increaseScroll1 = () => {
-        scrollContainerRef1.current.scrollTo({
-            left: scrollContainerRef1.current.scrollLeft + 450,
+    const increaseScroll3 = () => {
+        scrollContainerRef3.current.scrollTo({
+            left: scrollContainerRef3.current.scrollLeft + 450,
             behavior: 'smooth',
         });
     }
-    const decreaseScroll1 = () => {
-        scrollContainerRef1.current.scrollTo({
-            left: scrollContainerRef1.current.scrollLeft - 450,
+    const decreaseScroll3 = () => {
+        scrollContainerRef3.current.scrollTo({
+            left: scrollContainerRef3.current.scrollLeft - 450,
             behavior: 'smooth',
         });
     }
@@ -76,9 +75,9 @@ const Recommended = ({heading}) => {
         <div>
             <h1 className='heading'>{heading?heading:""}</h1>
             <div className='cardContainer'>
-                <button className='Arrow arrowRight' onClick={increaseScroll1}>{`>`}</button>
-                <button className='Arrow arrowLeft' onClick={decreaseScroll1}>{`<`}</button>
-                <div className='recommended flex overflow-x-auto w-full gap-4' ref={scrollContainerRef1} onScroll={handleScrollControl1}>
+                <button className='Arrows ArrowRight' onClick={increaseScroll3}>{`>`}</button>
+                <button className='Arrows ArrowLeft' onClick={decreaseScroll3}>{`<`}</button>
+                <div className='recommended flex overflow-x-auto w-full gap-4' ref={scrollContainerRef3} onScroll={handleScrollControl}>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
@@ -150,4 +149,4 @@ const Recommended = ({heading}) => {
     );
 };
 
-export default Recommended;
+export default ProductsUmayLIke;

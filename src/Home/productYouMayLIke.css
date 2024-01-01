@@ -1,0 +1,14 @@
+.Arrows {
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.ArrowRight {
+    right: 2%;
+}
+
+.ArrowLeft {
+    left: 2%;
+}

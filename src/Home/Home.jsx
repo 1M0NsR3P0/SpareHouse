@@ -10,6 +10,8 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import BannerNewBikerDiscount from './BannerNewBikerDiscount';
 import CategoriesShow from './CategoriesShow';
 import Recommended from './Recommended';
+import ProductsUmayLIke from './ProductsUmayLIke';
+import SelectBike from './SelectBike';
 
 
 AOS.init({
@@ -30,12 +32,15 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  
-  });
+
+});
 
 const Home = () => {
     const image1 = "b.png";
+    const image2 = "loveBikes.png"
+    const image3 = "b.png"
     const { mobile } = useContext(AuthContext)
+
     return (
         !mobile ? <>
             <div data-aos="zoom-in" data-aos-delay="250" id='home' className='h-[80vh] relative'>
@@ -51,14 +56,33 @@ const Home = () => {
                 <HotProducts />
             </div>
             <div>
-                <BannerNewBikerDiscount/>
+                <BannerNewBikerDiscount />
             </div>
             <div>
-                <CategoriesShow/>
+                <CategoriesShow />
             </div>
             <div>
-                <Recommended/>
+                <h2 className='heading'>Recommended For You</h2>
+                <Parallax className='rounded-[10px] h-[40vh] ' bgImage={image2} strength={500}>
+                    <Recommended heading={""} />
+                </Parallax>
             </div>
+            <div>
+                <h2 className='heading'>Products You May Like</h2>
+                <Parallax className='rounded-[10px] h-[40vh] ' bgImage={image3} strength={500}>
+                    <ProductsUmayLIke heading={""} />
+                </Parallax>
+            </div>
+            <div className='flex justify-center font-semibold'>
+                <SelectBike/>
+            </div>
+            <div>
+                <h2>Available At Your Local Store</h2>
+                <div>
+                    
+                </div>
+            </div>
+
         </> :
 
 
