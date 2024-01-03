@@ -11,7 +11,7 @@
     padding: 20px 0px; 
 }
 .card {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     border: 1px solid whitesmoke;
     width: 190px;
@@ -23,9 +23,13 @@
     background-color: rgba(0, 91, 156, 0.416);
     backdrop-filter: blur(5px);
 }
+.price{
+    padding: 0 4px;
+}
+
 .name{
-    overflow-y: auto;
-    padding-right: 2px;
+    overflow-y: hidden;
+    padding:0 4px;
 }
 .cardImgContainer {
     width: 188px;

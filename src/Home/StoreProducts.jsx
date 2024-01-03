@@ -1,148 +1,130 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import "./productYouMayLIke.css"
+import "./storeproducts.css"
 import { AuthContext } from '../authoProvider/AuthProvider';
 
-const ProductsUmayLIke = ({heading}) => {
-    
-    const [rated, setRated] = useState(3.5) //will set from database
-    const scrollContainerRef3 = useRef(null)
-    const [scrollAmount, setScrollAmount] = useState(0)
-    const [isScrollEnd, setIsScrollEnd] = useState(false);;
-    const [isInStart, setStart] = useState(false);
+const StoreProducts = ({heading}) => {
+    const scrollContainerRef4 = useRef(null)
+    const [scrollAmount4, setScrollAmount4] = useState(0)
+    const [isScrollEnd4, setIsScrollEnd4] = useState(false);;
+    const [isInStart4, setStart4] = useState(false);
 
     window.onload = () => {
+        document.querySelector(".ArrwLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
     }
     useEffect(() => {
-        document.querySelector(".ArrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
-        if (scrollContainerRef3.current) {
-            scrollContainerRef3.current.scrollLeft = 0;
+        // Set an initial scroll value when the component mounts
+        if (scrollContainerRef4.current) {
+            scrollContainerRef4.current.scrollLeft = 0;
         }
-        // Set initial background color when the component mounts
-    document.querySelector(".ArrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)";
+    }, []); // Only runs once when the component mounts
 
-    // Cleanup function to set background color when the component is unmounted
-    
-    }, []);
-
-    const handleScrollControl = () => {
-        if (scrollContainerRef3.current) {
-            const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef3.current;
-            setScrollAmount(scrollLeft);
+    const handleScrollContro4 = () => {
+        if (scrollContainerRef4.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef4.current;
+            setScrollAmount4(scrollLeft);
             const isEnd = scrollLeft >= scrollWidth - clientWidth;
             const isStart = scrollLeft === 0;
-            setIsScrollEnd(isEnd);
-            setStart(isStart);
+            setIsScrollEnd4(isEnd);
+            setStart4(isStart);
         }
     }
     useEffect(() => {
-        if (isInStart) {
-            document.querySelector(".ArrowLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
+        if (isInStart4) {
+            document.querySelector(".ArrwLeft").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
         }
-        else if (!isInStart) {
-            document.querySelector(".ArrowLeft").style.backgroundColor = "rgb(69, 146, 247)"
+        else if (!isInStart4) {
+            document.querySelector(".ArrwLeft").style.backgroundColor = "rgb(69, 146, 247)"
         }
 
-        if (!isScrollEnd) {
-            document.querySelector(".ArrowRight").style.backgroundColor = "rgb(69, 146, 247)"
+        if (!isScrollEnd4) {
+            document.querySelector(".ArrwRight").style.backgroundColor = "rgb(69, 146, 247)"
         }
-        else if (isScrollEnd) {
-            document.querySelector(".ArrowRight").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
+        else if (isScrollEnd4) {
+            document.querySelector(".ArrwRight").style.backgroundColor = "rgba(69, 146, 247, 0.191)"
         }
-    }, [scrollAmount, isScrollEnd, isInStart])
+    }, [scrollAmount4, isScrollEnd4, isInStart4])
 
-    const increaseScroll3 = () => {
-        scrollContainerRef3.current.scrollTo({
-            left: scrollContainerRef3.current.scrollLeft + 450,
+    const increaseScroll4 = () => {
+        scrollContainerRef4.current.scrollTo({
+            left: scrollContainerRef4.current.scrollLeft + 450,
             behavior: 'smooth',
         });
     }
-    const decreaseScroll3 = () => {
-        scrollContainerRef3.current.scrollTo({
-            left: scrollContainerRef3.current.scrollLeft - 450,
+    const decreaseScroll4 = () => {
+        scrollContainerRef4.current.scrollTo({
+            left: scrollContainerRef4.current.scrollLeft - 450,
             behavior: 'smooth',
         });
     }
-
-    const rate = {
-        size: 20,
-        value: rated,
-        count: 5,
-        edit: false,
-        color: "#7b7b7bcf",
-        activeColor: "black",
-        isHalf: true,
-        a11y: true,
-
-    };
     const { mobile } = useContext(AuthContext)
     return (
-        <div>
+        <div className='relative'>
             <h1 className='heading'>{heading?heading:""}</h1>
             <div className='cardContainer'>
-                <button className='Arrows ArrowRight' onClick={increaseScroll3}>{`>`}</button>
-                <button className='Arrows ArrowLeft' onClick={decreaseScroll3}>{`<`}</button>
-                <div className='recommended flex overflow-x-auto w-full gap-4' ref={scrollContainerRef3} onScroll={handleScrollControl}>
-                    <div className='card'>
+                <button className='Arrws ArrwRight' onClick={increaseScroll4}>{`>`}</button>
+                <button className='Arrws ArrwLeft' onClick={decreaseScroll4}>{`<`}</button>
+                <div className='recommended flex overflow-x-auto w-full gap-4' ref={scrollContainerRef4} onScroll={handleScrollContro4}>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The first of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
-                    <div className='card'>
+                    <div className='card cardBg'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
                         <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The last of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
@@ -153,4 +135,4 @@ const ProductsUmayLIke = ({heading}) => {
     );
 };
 
-export default ProductsUmayLIke;
+export default StoreProducts;

@@ -76,8 +76,8 @@ const SelectBike = () => {
     return (
         <div className='border rounded-lg w-[80%] flex justify-center items-center h-[150px] flex-col gap-5'>
             <div className='flex justify-center gap-3 text-[#1c4775]'>
-                <h1>Shop For Your Bike</h1>
-                <div> &#x2699; Garage  <a href="#">Log in , To See your Saved Bike</a> </div>
+                <h1>Select Your Bike</h1>
+                <div> &#x2699; Garage,  <a href="#">Log in To See your Saved Bike</a> </div>
             </div>
             <div id='bikeSorter' className='bikeSorter flex justify-center gap-10'>
                 <select name="types" id="types" onChange={handleTypeChange}>

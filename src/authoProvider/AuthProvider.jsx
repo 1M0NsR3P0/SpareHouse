@@ -28,7 +28,7 @@ const AuthContxt = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('../../public/bikes.json');
+        const response = await fetch('bikes.json');
         const data = await response.json();
 
         // Now you can work with the 'data' variable

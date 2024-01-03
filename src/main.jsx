@@ -10,6 +10,10 @@ import AuthContxt from './authoProvider/AuthProvider';
 import Home from './Home/Home';
 import Main from './Home/Main';
 import Error from './Error';
+import ContactUs from './NavPages/ContactUs';
+import Cart from './NavPages/Cart';
+import Checkout from './NavPages/Checkout';
+import Product from './Pages/Product';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +23,22 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path:'contact',
+        element:<ContactUs/>
+      },
+      {
+        path:'cart',
+        element:<Cart/>
+      },
+      {
+        path:'checkout',
+        element:<Checkout/>
+      },
+      {
+        path:'product',
+        element:<Product/>
       },
     ]
   },

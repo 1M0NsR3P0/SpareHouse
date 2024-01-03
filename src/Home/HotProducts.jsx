@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import "./home.css"
 import { AuthContext } from '../authoProvider/AuthProvider';
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 
 
 const HotProducts = () => {
@@ -85,6 +86,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                            <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -94,6 +99,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -103,6 +112,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -112,6 +125,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -121,6 +138,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -130,6 +151,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -139,6 +164,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -148,6 +177,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -157,6 +190,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -166,6 +203,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -175,6 +216,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link className='bg-[#0099ff76] cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -184,6 +229,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -193,6 +242,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -202,6 +255,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='mt-[50px] SquareCard-container'>
@@ -211,6 +268,10 @@ const HotProducts = () => {
                             <span className='font-bold text-[#e9f1ff]'>Price: <span className=''>20043 Tk</span></span>
                             <span className='font-bold text-[#7a8392]'>Price: <span className='line-through'>24043 Tk</span></span>
                             <div className='flex items-center gap-1'><span><ReactStars {...rate} onChange={(newValue) => { console.log(newValue) }} /></span> <a href='#'>FeedBack?</a ></div>
+                                                        <div className='flex justify-between m-[2px]'>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>More</Link>
+                                <Link to={`product/:id`} className='bg-[#1267f173] text-[white] font-semibold cursor-pointer p-1 rounded-md active:p-[5px]'>Add To Cart</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

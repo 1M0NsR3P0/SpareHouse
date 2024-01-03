@@ -1,0 +1,66 @@
+/* cart.css */
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+table {
+    width: 65%;
+    margin-right: 20px;
+    padding: 2px 10px;
+    overflow-y: scroll;
+    height: 70vh;
+}
+thead{}
+tbody{
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    max-height: 80px; /* Set a maximum height for the cells */
+    overflow: hidden;
+}
+
+th {
+    height: 50px;
+}
+
+tr {
+    height: 80px !important; /* Use !important to ensure this style takes precedence */
+}
+
+.order-summary {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.addressForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.addressForm label {
+    margin-bottom: 10px;
+}
+
+.addressForm input {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.addressForm button {
+    margin-top: 10px;
+}

@@ -1,15 +1,18 @@
-.Arrows {
+.cardBg{
+    background-color: rgba(5, 160, 203, 0.592);
+    color: black;
+}
+.Arrws {
     position: absolute;
     top: 50%;
     font-size: 1.5rem;
     color: black;
 }
 
-.ArrowRight {
+.ArrwRight {
     right: 2%;
 }
 
-.ArrowLeft {
+.ArrwLeft {
     left: 2%;
-    background-color: rgba(69, 146, 247, 0.191);
 }

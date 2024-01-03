@@ -81,67 +81,67 @@ const Recommended = ({heading}) => {
                 <div className='recommended flex overflow-x-auto w-full gap-4' ref={scrollContainerRef1} onScroll={handleScrollControl1}>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The first of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The name of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                     <div className='card'>
                         <div className='cardImgContainer'><img className='' src="recommended1.jpg" alt="" /></div>
-                        <div>Price: <span>985Tk</span>- <span>1850Tk</span></div>
+                        <div className='price'>Price: <span>985Tk</span>- <span>1850Tk</span></div>
                         <div className='name'>The last of the product lorem vaia ipsum via doolor via tarpor abar lorem via</div>
                     </div>
                 </div>
