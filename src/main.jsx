@@ -14,6 +14,7 @@ import ContactUs from './NavPages/ContactUs';
 import Cart from './NavPages/Cart';
 import Checkout from './NavPages/Checkout';
 import Product from './Pages/Product';
+import Success from './NavPages/Success';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path:'product',
         element:<Product/>
+      },
+      {
+        path:'success',
+        element:<Success/>
       },
     ]
   },

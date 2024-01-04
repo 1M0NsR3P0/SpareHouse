@@ -43,7 +43,7 @@ const Navbar = () => {
                     <div>
                         <span className='text-[32px]' onClick={()=>{setProfileOpen(!profileOpen)}}>&#x1F464;
                         </span>
-                        <table className={`select-none ${profileOpen ? 'block' : 'hidden'} z-50 absolute top-[90px] bg-[#7caaf9] menus cursor-pointer`}>
+                        <table className={`select-none ${profileOpen ? 'block' : 'hidden'} z-50 absolute top-[90px] bg-[#7caaf9ac]  menus cursor-pointer w-fit h-fit overflow-hidden`}>
                             <tbody>
                                 <tr className='menu'><td className='text-[black]'><a href='#'>&#x1F464; Profile</a></td></tr>
                                 <tr className='menu'><td className='text-[black]'><a href='#'><span className=''>&#x1F6D2;</span> Cart</a></td></tr>
@@ -64,14 +64,14 @@ const Navbar = () => {
                 <button onClick={() => { setMenuOpen(!menuOpen) }} className='pl-3 pr-3 block md:hidden'>&#x2630;</button>
             </div>
 
-            <table className={`select-none ${menuOpen ? 'block' : 'hidden'} z-50 absolute top-[90px] right-0 bg-[#7caaf9] menus cursor-pointer`}>
+            <table className={`select-none ${menuOpen ? 'block' : 'hidden'} z-50 absolute top-[90px] right-0 bg-[#7caaf9ac] w-fit h-fit overflow-hidden menus cursor-pointer`}>
                 <tbody>
                     <tr className='menu'><td className='text-[black]'><a href='#'>&#x1F464; Profile</a></td></tr>
                     <tr className='menu'><td className='text-[black]'><a href='#'><span className=''>&#x1F6D2;</span> Cart</a></td></tr>
                     <tr className='menu'><td className='text-[black] flex'><img src="./location.png" alt="location-icon" className='location-icon w-[30px] h-[30px]' />Find Us</td></tr>
                 </tbody>
             </table>
-            <table className={`select-none ${categoryOpen ? 'block' : 'hidden'} z-50 category absolute top-[90px] right-0 bg-[#7caaf9] cursor-pointer`}>
+            <table className={`select-none ${categoryOpen ? 'block' : 'hidden'} z-50 category absolute top-[90px] right-0 bg-[#7caaf9ac] h-fit w-fit overflow-hidden cursor-pointer `}>
                 <tbody>
                     <tr className='menu'><td className='text-[black]'><a href='#'>Helmets</a></td></tr>
                     <tr className='menu'><td className='text-[black]'><a href='#'>Riding Gear</a></td></tr>

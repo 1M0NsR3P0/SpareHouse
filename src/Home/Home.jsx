@@ -53,37 +53,37 @@ const Home = () => {
                     </div>
                 </Parallax>
             </div>
-            <div data-aos="fade-up" className='flex justify-center relative mt-[-120px]'>
+            <div data-aos="zoom-in" className='flex justify-center relative mt-[-120px]'>
                 <HotProducts />
             </div>
-            <div>
+            <div data-aos="slide-left">
                 <BannerNewBikerDiscount />
             </div>
-            <div>
+            <div data-aos="slide-right">
                 <CategoriesShow />
             </div>
-            <div>
+            <div data-aos="fade-up-right">
                 <h2 className='heading'>Recommended For You</h2>
                 <Parallax className='rounded-[10px] h-[40vh] ' bgImage={image2} strength={500}>
                     <Recommended heading={""} />
                 </Parallax>
             </div>
-            <div id='shopByVhicle'>
+            <div data-aos="fade-up-left" id='shopByVhicle'>
                 <h2 className='heading'>Products You May Like</h2>
                 <Parallax className='rounded-[10px] h-[40vh] ' bgImage={image3} strength={500}>
                     <ProductsUmayLIke heading={""} />
                 </Parallax>
             </div>
-            <div className='flex justify-center font-semibold my-5'>
+            <div data-aos="zoom-in" className='flex justify-center font-semibold my-5'>
                 <SelectBike />
             </div>
-            <div className='mt-[35px]'>
+            <div data-aos="slide-up" className='mt-[35px]'>
                 <h2 className='text-center text-[#18327b] font-semibold text-[1.2rem]'>Available At Your Local Store</h2>
                 <div className=''>
                     <StoreProducts heading={""} />
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <div className='flex justify-center'>
                     <h2 className='text-[1.3rem] text-[#19577d] font-semibold p-5 pb-15 border-b-[2px] border-[#2b60a9] w-[90%]'>Motorcycle Parts & Gear</h2>
                 </div>
@@ -97,7 +97,7 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            <div className='pt-5'>
+            <div className='pt-5' data-aos="zoom-up">
                 <div className='py-2 text-[1.4rem] font-semibold text-[#c4e8ff] bg-[#224091] flex gap-5 justify-center'><h2> We're always looking to get better for our customers. Tell us what you like, what's missing, or what's broken</h2><button>Feedback?</button></div>
             </div>
 

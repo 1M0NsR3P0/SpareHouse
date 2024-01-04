@@ -13,7 +13,7 @@ import CheckoutForm from './CheckoutForm';
 
 
 
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_KEY);
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 
 const options = {
     mode: 'payment',
@@ -32,6 +32,7 @@ const Checkout = () => {
             <Elements stripe={stripePromise} options={options}>
                 <CheckoutForm />
             </Elements>
+            <div></div>
         </div>
     );
 };
